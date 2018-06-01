@@ -1,0 +1,6 @@
+- Fazer ícone da página 
+- Colocar cartaz dos filmes 
+- Trocar descrição 
+• Colocar ação ao clicar no comprar do modal para ir para o carrinho
+- Arrumar carrinho
+- Arrumar product-detail

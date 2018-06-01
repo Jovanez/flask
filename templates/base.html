@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% block head %}
+<head>
+	<title>Ticket One</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="static/images/icons/favicon.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/fonts/themify/themify-icons.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/fonts/elegant-font/html-css/style.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/slick/slick.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/vendor/lightbox2/css/lightbox.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="static/css/util.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+
+
+
+<!--===============================================================================================-->
+    	<!-- header fixed -->
+	<div class="wrap_header fixed-header2 trans-0-4">
+		<!-- Logo -->
+		<a href="home-02.html" class="logo">
+			Ticket One
+		</a>
+
+		<!-- Menu -->
+		<div class="wrap_menu">
+			<nav class="menu">
+				<ul class="main_menu">
+					<li>
+						<a href="/">Home</a>
+					</li>
+
+
+					<li>
+						<a href="/filme">Filmes</a>
+					</li>
+
+					<li>
+						<a href="/sobre">Sobre</a>
+					</li>
+
+					<li>
+						<a href="/contato">Contato</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- Header Icon -->
+		    <div class="header-icons">
+			<a href="/usuario/cadastro" class="header-wrapicon1 dis-block">
+				<img src="{{ url_for('static', filename='images/icons/icon-header-01.png') }}" class="header-icon1" alt="ICON">
+			</a>
+		</div>
+	</div>
+
+	<!-- Header -->
+	<header class="header2">
+		<!-- Header desktop -->
+		<div class="container-menu-header-v2 p-t-26">
+			<div class="topbar2">
+				<!-- Logo2 -->
+				<a href="{{ url_for('index')}}" class="logo2">
+						Ticket One
+				</a>
+
+				<div class="topbar-child2">
+
+					<a href="{{ url_for('index')}}" class="header-wrapicon1 dis-block m-l-30">
+						<img src="{{ url_for('static', filename='images/icons/icon-header-01.png') }}" class="header-icon1" alt="ICON">
+					</a>
+
+				</div>
+			</div>
+
+			<div class="wrap_header">
+
+				<!-- Menu -->
+				<div class="wrap_menu">
+					<nav class="menu">
+						<ul class="main_menu">
+							<li>
+								<a href="{{ url_for('index')}}">Home</a>
+								</li>
+
+
+								<li>
+									<a href="/filme">Filmes</a>
+								</li>
+
+								<li>
+									<a href="{{ url_for('sobre')}}">sobre</a>
+								</li>
+
+								<li>
+									<a href="{{ url_for('contato')}}">Contato</a>
+								</li>
+						</ul>
+					</nav>
+				</div>
+
+				<!-- Header Icon -->
+				<div class="header-icons">
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Header Mobile -->
+		<div class="wrap_header_mobile">
+			<!-- Logo moblie -->
+			<a href="{{ url_for('index')}}" class="logo-mobile">
+				<h1>Ticket One</h1>
+			</a>
+
+			<!-- Button show menu -->
+			<div class="btn-show-menu">
+				<!-- Header Icon mobile -->
+				<div class="header-icons-mobile">
+					<a href="#" class="header-wrapicon1 dis-block">
+						<img src="static/images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
+					</a>
+
+				</div>
+
+				<div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- Menu Mobile -->
+		<div class="wrap-side-menu" >
+			<nav class="side-menu">
+				<ul class="main-menu">
+					<li class="item-menu-mobile">
+						<a href="{{ url_for('index')}}">Home</a>
+						<ul class="sub-menu">
+
+							<li><a href="{{ url_for('index')}}">Home</a></li>
+
+
+					<li>
+							<a href="{{ url_for('index')}}">Home</a>
+						</li>
+
+
+						<li>
+							<a href="">Filmes</a>
+						</li>
+
+						<li>
+							<a href="{{ url_for('sobre')}}">Sobre</a>
+						</li>
+
+						<li>
+							<a href="{{ url_for('contato')}}">Contato</a>
+						</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+</head>
+{% endblock %}
+
+<body>
+{% block content %}
+{% endblock %}
+{% block footer %}
+        	<!-- Footer -->
+	<footer class="bg6 p-t-45 p-b-43 p-l-45 p-r-45">
+
+
+
+			<div class="t-center s-text8 p-t-20">
+				Copyright © 2018 Todos direitos são reservados. | Cinetickets S. A.
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- Back to top -->
+	<div class="btn-back-to-top bg0-hov" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+		</span>
+	</div>
+
+	<!-- Container Selection1 -->
+	<div id="dropDownSelect1"></div>
+
+{% endblock %}
+</body>
+
+{% block script %}
+
+
+<!--===============================================================================================-->
+
+	<script type="text/javascript" src="{{ url_for('static', filename='vendor/jquery/jquery-3.2.1.min.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='vendor/animsition/js/animsition.min.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='vendor/bootstrap/js/popper.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='vendor/select2/select2.min.js')}}"></script>
+
+	<script type="text/javascript">
+		$(".selection-1").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+    <script type="text/javascript" src="{{ url_for('static', filename='vendor/slick/slick.min.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/slick-custom.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='vendor/countdowntime/countdowntime.js')}}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='vendor/lightbox2/js/lightbox.min.js')}}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='vendor/parallax100/parallax100.js')}}"></script>
+	<script type="text/javascript">
+        $('.parallax100').parallax100();
+	</script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/main.js')}}"></script>
+{% endblock %}
+</html>
