@@ -2,12 +2,84 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2985816-d96c-4964-b625-2358ad61af75" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/carrinho.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filme.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testeBanco.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projeto-flaks.rar" beforeDir="false" afterPath="$PROJECT_DIR$/projeto-flaks.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/painelDiasFilme.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/painelSessoesFilme.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banco.py" beforeDir="false" afterPath="$PROJECT_DIR$/banco.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/criaBanco.py" beforeDir="false" afterPath="$PROJECT_DIR$/criaBanco.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/filme.py" beforeDir="false" afterPath="$PROJECT_DIR$/filme.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner-06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner-07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner-08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner-09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner-11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner-12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner-13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner-14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/bg-banner-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/bg-banner-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/bg-video-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog-06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog-07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog-08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog-09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/blog-10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/gallery-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/gallery-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/gallery-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/gallery-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/gallery-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/gallery-06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/gallery-07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/gallery-08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/gallery-09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/gallery-10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/gallery-11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/gallery-12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/gallery-13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/gallery-14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/gallery-15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/item-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/item-01333.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/item-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/item-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/item-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/item-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/item-06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/item-07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/item-09.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/item-10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/item-11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/item-12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/item-13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/item-14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/item-15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/item-16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/item-17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/master-slide-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/master-slide-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/master-slide-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/master-slide-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/master-slide-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/master-slide-06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/master-slide-07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog-detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home-02.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,24 +92,21 @@
     <SUITE FILE_PATH="coverage/ProjetoFlask$Projeto.coverage" NAME="Projeto Coverage Results" MODIFIED="1526912133396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="product-detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/product-detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+            <state relative-caret-position="136">
+              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="filme.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/filme.py">
+      <file leaf-file-name="painelDiasFilme.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/painelDiasFilme.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="25" column="78" selection-start-line="25" selection-start-column="78" selection-end-line="25" selection-end-column="78" />
-              <folding>
-                <element signature="e#0#70#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="9" column="107" selection-start-line="9" selection-start-column="107" selection-end-line="9" selection-end-column="107" />
             </state>
           </provider>
         </entry>
@@ -45,35 +114,38 @@
       <file leaf-file-name="criaBanco.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/criaBanco.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1938">
-              <caret line="21" column="99" selection-start-line="21" selection-start-column="99" selection-end-line="21" selection-end-column="99" />
+            <state relative-caret-position="560">
+              <caret line="161" column="35" selection-start-line="161" selection-start-column="35" selection-end-line="161" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testeBanco.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testeBanco.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home-02.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/home-02.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-782">
-              <caret line="63" column="173" selection-start-line="63" selection-start-column="173" selection-end-line="63" selection-end-column="173" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="product-detail.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/product-detail.html">
+      <file leaf-file-name="painelSessoesFilme.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/painelSessoesFilme.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="176" column="47" lean-forward="true" selection-start-line="176" selection-start-column="47" selection-end-line="176" selection-end-column="47" />
+              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/product.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filme.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/filme.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="106" selection-start-line="9" selection-start-column="106" selection-end-line="9" selection-end-column="106" />
+              <folding>
+                <element signature="e#0#78#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,8 +153,11 @@
       <file leaf-file-name="banco.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/banco.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="86" column="11" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="11" />
+            <state relative-caret-position="357">
+              <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#159#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,8 +167,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -106,6 +181,7 @@
       <find>jpg</find>
       <find>image</find>
       <find>wrap-pic-w</find>
+      <find>sobre</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -136,15 +212,18 @@
         <option value="$PROJECT_DIR$/controllers/carrinho.py" />
         <option value="$PROJECT_DIR$/controllers/filme.py" />
         <option value="$PROJECT_DIR$/carrinho.py" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/testeBanco.py" />
+        <option value="$PROJECT_DIR$/templates/home-02.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/templates/product.html" />
+        <option value="$PROJECT_DIR$/templates/painelSessoesFilme.html" />
+        <option value="$PROJECT_DIR$/templates/product-detail.html" />
+        <option value="$PROJECT_DIR$/templates/painelDiasFilme.html" />
         <option value="$PROJECT_DIR$/banco.py" />
         <option value="$PROJECT_DIR$/criaBanco.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/home-02.html" />
-        <option value="$PROJECT_DIR$/testeBanco.py" />
         <option value="$PROJECT_DIR$/filme.py" />
-        <option value="$PROJECT_DIR$/templates/product-detail.html" />
       </list>
     </option>
   </component>
@@ -157,57 +236,59 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1784" />
+    <option name="height" value="968" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="projeto-flaks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projeto-flaks" type="462c0819:PsiDirectoryNode" />
+              <item name="flask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="projeto-flaks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projeto-flaks" type="462c0819:PsiDirectoryNode" />
+              <item name="flask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="flask" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flask" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="projeto-flaks" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Projetos\Ifes\projeto-flaks" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ProjetoFlask\flask\templates" />
       <recent name="E:\Projetos\Ifes\projeto-flaks\static\vendor\bootstrap\css" />
       <recent name="E:\Projetos\Ifes\projeto-flaks\templates" />
       <recent name="E:\ProjetoFlask\projeto-flaks\static" />
       <recent name="C:\Users\Jovane Vasconcelos\Desktop\Projeto\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Projetos\Ifes\projeto-flaks" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -255,8 +336,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1784" height="968" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5080527" side_tool="true" weight="0.26550078" />
@@ -264,8 +344,8 @@
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49946696" weight="0.32897604" />
       <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.4978678" weight="0.3278867" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.32946146" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.4919473" visible="true" weight="0.2640264" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27458397" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="12" sideWeight="0.4919473" visible="true" weight="0.18915662" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21403712" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -283,27 +363,27 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27458397" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49946696" weight="0.32897604" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.32946146" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.27458397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.32946146" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49946696" visible="true" weight="0.32897604" />
-      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.4978678" weight="0.3278867" />
       <window_info active="true" anchor="bottom" id="REST Client" order="0" sideWeight="0.49947917" weight="0.33581296" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49946696" visible="true" weight="0.32897604" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.4919473" visible="true" weight="0.2640264" />
       <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.5080527" side_tool="true" weight="0.26550078" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49946696" weight="0.32897604" />
+      <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.4978678" weight="0.3278867" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,15 +398,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/env/Lib/site.py" />
-    <entry file="file://$PROJECT_DIR$/env/Lib/locale.py" />
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -355,7 +426,6 @@
     <entry file="file://$PROJECT_DIR$/controllers/auth.py" />
     <entry file="file://$PROJECT_DIR$/templates/cadastroUsuario.html" />
     <entry file="file://$PROJECT_DIR$/templates/listaUsuarios.html" />
-    <entry file="file://$PROJECT_DIR$/templates/index.html" />
     <entry file="file://$PROJECT_DIR$/env/Scripts/activate" />
     <entry file="file://$PROJECT_DIR$/env/pip-selfcheck.json" />
     <entry file="file://$PROJECT_DIR$/env/Lib/locale.py" />
@@ -406,9 +476,7 @@
         <state relative-caret-position="-6783" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/__init__.py" />
     <entry file="file://$PROJECT_DIR$/carrinho.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -427,27 +495,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="185" column="7" lean-forward="true" selection-start-line="185" selection-start-column="7" selection-end-line="185" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/criaBanco.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1938">
-          <caret line="21" column="99" selection-start-line="21" selection-start-column="99" selection-end-line="21" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testeBanco.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -455,34 +502,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/filme.py">
+    <entry file="file://$PROJECT_DIR$/templates/home-02.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
-          <caret line="25" column="78" selection-start-line="25" selection-start-column="78" selection-end-line="25" selection-end-column="78" />
+          <caret line="64" column="72" selection-start-line="64" selection-start-column="72" selection-end-line="64" selection-end-column="72" />
           <folding>
-            <element signature="e#0#70#0" expanded="true" />
+            <element signature="e#309#382#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home-02.html">
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-782">
-          <caret line="63" column="173" selection-start-line="63" selection-start-column="173" selection-end-line="63" selection-end-column="173" />
+        <state relative-caret-position="195">
+          <caret line="223" column="84" selection-start-line="223" selection-start-column="78" selection-end-line="223" selection-end-column="84" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/banco.py">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="86" column="11" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="11" />
+        <state relative-caret-position="578">
+          <caret line="60" column="51" selection-start-line="60" selection-start-column="51" selection-end-line="68" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+          <folding>
+            <element signature="e#25#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/painelSessoesFilme.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/painelDiasFilme.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="107" selection-start-line="9" selection-start-column="107" selection-end-line="9" selection-end-column="107" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/product-detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="176" column="47" lean-forward="true" selection-start-line="176" selection-start-column="47" selection-end-line="176" selection-end-column="47" />
+        <state relative-caret-position="136">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/banco.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="99" column="26" selection-start-line="99" selection-start-column="26" selection-end-line="99" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/criaBanco.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="161" column="35" selection-start-line="161" selection-start-column="35" selection-end-line="161" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filme.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="106" selection-start-line="9" selection-start-column="106" selection-end-line="9" selection-end-column="106" />
+          <folding>
+            <element signature="e#0#78#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

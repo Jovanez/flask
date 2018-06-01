@@ -1,6 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
+  <script type="text/javascript" src="/static/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script  type=text/javascript>
+        function inserir() {
+            cinema = $("#cinema").val()
+            data = $.get("http://localhost:5000/filme/diasJson/"+cinema,function(data,status){
+                $("#tabela").html(data)
+            })
 
+
+    }
+    </script>
 	<!-- Product Detail -->
 <div class="container bgwhite p-t-35 p-b-80">
 
@@ -14,7 +24,7 @@
 
 					<div>
 						<div class="wrap-pic-w">
-							<img src="static/images/{{ filme.cartaz }}" alt="IMG-PRODUCT">
+							<img src="{{ filme.cartaz }}" alt="IMG-PRODUCT">
 						</div>
 					</div>
 
@@ -38,7 +48,7 @@
 						<div class="dropdown-content dis-none p-t-15 p-b-23">
 							<div class="form-group">
 
-								<select class="form-control" id="cinema" name="cinema">
+								<select class="form-control" id="cinema" name="cinema" onchange="inserir()">
                                     {% for cinema in listaCinema %}
                                         <option value="{{ cinema.codigo }}">{{ cinema.nome }}</option>
                                     {% endfor %}
@@ -63,84 +73,7 @@
 										<th>Meia</th>
 									</tr>
 								</thead>
-								<tbody>
-									<tr>
-										<td>QUINTA À DOMINGO E FERIADOS FILME 2D</td>
-										<td>R$20,00</td>
-										<td>R$10,00</td>
-										<td>
-											<div class="radio">
-												<label>
-													<input type="radio" name="optradio">
-												</label>
-											</div>
-										</td>
-									</tr>
-									<tr>
-										<td>SEGUNDA E TERÇA FILME 2D</td>
-										<td>R$14,00</td>
-										<td>R$7,00</td>
-										<td>
-											<div class="radio">
-												<label>
-													<input type="radio" name="optradio">
-												</label>
-											</div>
-										</td>
-									</tr>
-									</tr>
-									<tr>
-										<td>QUARTA-FEIRA FILME 2D</td>
-										<td>R$16,00</td>
-										<td>R$8,00</td>
-										<td>
-											<div class="radio">
-												<label>
-													<input type="radio" name="optradio">
-												</label>
-											</div>
-										</td>
-									</tr>
-									</tr>
-									<tr>
-										<td>QUINTA À DOMINGO E FERIADOS FILME 3D</td>
-										<td>R$24,00</td>
-										<td>R$12,00</td>
-										<td>
-											<div class="radio">
-												<label>
-													<input type="radio" name="optradio">
-												</label>
-											</div>
-										</td>
-									</tr>
-									</tr>
-									<tr>
-										<td>SEGUNDA E TERÇA FILME 3D</td>
-										<td>R$16,00</td>
-										<td>R$8,00</td>
-										<td>
-											<div class="radio">
-												<label>
-													<input type="radio" name="optradio">
-												</label>
-											</div>
-										</td>
-									</tr>
-									</tr>
-									<tr>
-										<td>QUARTA-FEIRA FILME 2D</td>
-										<td>R$18,00</td>
-										<td>R$9,00</td>
-										<td>
-											<div class="radio">
-												<label>
-													<input type="radio" name="optradio">
-												</label>
-											</div>
-										</td>
-									</tr>
-									</tr>
+								<tbody id="tabela">
 								</tbody>
 							</table>
 						</div>

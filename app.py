@@ -18,11 +18,11 @@ def index():
    listaBanner = None
    listaFilme = listarFilme()
    try:
-      listaBanner = Banner.select()
+      listaBanner = Banner.select().where(Banner.status=="ativo")
    except DoesNotExist:
       pass
 
-   return render_template("home-02.html", listaBanner=listaBanner,i=1,filmeCartaz=listaFilme)
+   return render_template("index.html", listaBanner=listaBanner,filmeCartaz=listaFilme)
 
 @app.route("/contato")
 def contato():
@@ -43,4 +43,3 @@ def listarFilme():
         pass
 
     return listafilmes
-

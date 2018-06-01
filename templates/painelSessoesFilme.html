@@ -1,0 +1,16 @@
+{% if sessoes %}
+    {% for dia in sessoes %}
+    <tr>
+        <td>{{ dia.nome }}</td>
+        <td>R$ {{ "{0:.2f}".format(dia.preco) }}</td>
+          <td>R$ {{ "{0:.2f}".format(dia.preco/2) }}</td>
+        <td>
+            <div class="radio">
+                <label>
+                    <input value="{{ dia.codigo }}" type="radio" name="optradio">
+                </label>
+            </div>
+        </td>
+    </tr>
+    {% endfor %}
+{% endif %}

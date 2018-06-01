@@ -1,4 +1,5 @@
 from peewee import Model, CharField, PostgresqlDatabase,PrimaryKeyField,ForeignKeyField,DateField,DateTimeField,DoubleField,IntegerField,TextField,CompositeKey
+from flask import json
 
 db = PostgresqlDatabase('cinema', user='postgres', password='postgres', host="localhost", port="5432")
 
@@ -6,6 +7,7 @@ class BaseModel(Model):
     """A base model that will use our MySQL database"""
     class Meta:
         database = db
+
 
 
 class Usuario(BaseModel):
@@ -48,9 +50,6 @@ class TipoAudio(BaseModel):
     codigo = PrimaryKeyField()
     tipoAudio = CharField(max_length=18)
 
-class Preco(BaseModel):
-    codigo = PrimaryKeyField()
-    valorPreco = DoubleField()
 
 class Uf(BaseModel):
     sigla = CharField(primary_key=True,max_length=2)
@@ -83,7 +82,8 @@ class Filme(BaseModel):
     codigo = PrimaryKeyField()
     nome = CharField(unique=True)
     site = CharField()
-    cartaz = TextField()
+    cartaz = CharField(max_length=100, default="static/images/item-null.jpg")
+    embreve = CharField(max_length=100, default="static/images/banner-null.jpg")
     sinopse = TextField()
     genero = ForeignKeyField(Genero, backref='Filmes')
 
@@ -95,15 +95,15 @@ class Programacao(BaseModel):
     cinema = ForeignKeyField(Cinema, backref='Programacoes')
 
 class DiaSemana(BaseModel):
-    dia = PrimaryKeyField()
+    codigo = PrimaryKeyField()
     nome = CharField()
-    preco = ForeignKeyField(Preco)
-    cinema = ForeignKeyField(Cinema, backref='DiaSdaSemana')
+    numero = IntegerField()
+    preco = DoubleField()
+    cinema = ForeignKeyField(Cinema, backref='DiasDaSemana')
 
 class TipoTela(BaseModel):
     codigo = PrimaryKeyField()
     tipoTela = CharField()
-
 
 class Sessao(BaseModel):
     codigo = PrimaryKeyField()
@@ -147,5 +147,5 @@ class Banner(BaseModel):
     codigo = PrimaryKeyField()
     nome = CharField()
     descricao = CharField()
-    banner = CharField(max_length=20)
+    banner = CharField(max_length=100)
     status = CharField(max_length=10)
