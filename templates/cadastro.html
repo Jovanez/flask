@@ -1,0 +1,181 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <body class="animsition">
+
+    <!-- content page -->
+    <section class="bgwhite p-t-66 p-b-38">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-9 mx-auto">
+                    <div class="cta-inner text-center rounded">
+                        <h2 class="section-heading mb-5">
+
+                            <h2 style="padding-bottom: 10px;">Cadastro</h2>
+
+
+
+                        </h2>
+                        <form class="form-horizontal" role="form" method="POST" action="/login">
+                            <div class="row">
+                                <div class="col-md-3"></div>
+ {% if msg %}
+                                    <div class="alert {{ msg[0] }}" role="alert">
+                                        {{ msg[1] }}
+                                    </div>
+                                {% endif %}
+                            </div>
+                            <div class="row">
+
+                                <div class="col-md-3">
+                                    <div class="form-control-feedback">
+                                        <span class="text-danger align-middle">
+                                            <!-- Put name validation error messages here -->
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="row">
+                                <div class="col-md-3 text-right field-label-responsive">
+                                    <label for="password">Nome:</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                            <div class="input-group-addon" style="width: 2.6rem">
+                                                <i class="fa fa-user-circle"></i>
+                                            </div>
+                                            <input  type="text" name="nome" class="form-control"  placeholder="Nome Completo" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="row">
+                                <div class="col-md-3 text-right field-label-responsive">
+                                    <label for="password">Cpf:</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                            <div class="input-group-addon" style="width: 2.6rem">
+                                                <i class="fa fa-address-card"></i>
+                                            </div>
+                                            <input  type="text" size="14" name="cpf" class="form-control" placeholder="000.000.000-00" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="row">
+                                <div class="col-md-3 text-right field-label-responsive">
+                                    <label for="password">Email:</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                            <div class="input-group-addon" style="width: 2.6rem">
+                                                <i class="fa fa-edge"></i>
+                                            </div>
+                                            <input  type="email" name="email" class="form-control"  placeholder="example@email.com" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="text-right col-md-3 field-label-responsive">
+                                    <label for="email">Usuario:</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                            <div class="input-group-addon" style="width: 2.6rem">
+                                                <i class="fa fa-user"></i>
+                                            </div>
+                                            <input type="text" name="usuario" class="form-control"  placeholder="Usuario" required autofocus>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-control-feedback">
+                                        <span class="text-danger align-middle">
+                                            <!-- Put e-mail validation error messages here -->
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 text-right field-label-responsive">
+                                    <label for="password">Senha:</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                            <div class="input-group-addon" style="width: 2.6rem">
+                                                <i class="fa fa-key"></i>
+                                            </div>
+                                            <input  type="password" name="senha" class="form-control" placeholder="Password" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3 text-right field-label-responsive">
+                                    <label for="password">Confirma Senha:</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                            <div class="input-group-addon" style="width: 2.6rem">
+                                                <i class="fa fa-key"></i>
+                                            </div>
+                                            <input  type="password" name="confirmaSenha" class="form-control"  placeholder="Password" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         <div class="row">
+                                <div class="col-md-3 text-right field-label-responsive">
+                                    <label for="password">Pergunta Secreta:</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                            <div class="input-group-addon" style="width: 2.6rem">
+                                                <i class="fa fa-key"></i>
+                                            </div>
+                                            <input  type="text" name="perguntaSecreta" class="form-control"  placeholder="Onde nasci" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         <div class="row">
+                                <div class="col-md-3 text-right field-label-responsive">
+                                    <label for="password">Resposta secreta:</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group has-danger">
+                                        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                                            <div class="input-group-addon" style="width: 2.6rem">
+                                                <i class="fa fa-key"></i>
+                                            </div>
+                                            <input  type="text" name="repostaSecreta" class="form-control"  placeholder="Em monte Ytalo" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-6 text-right">
+                                    <button type="button" class="btn btn-warning">
+                                        <i class="fa fa-user-plus"></i>Cadastrar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,7 +1,10 @@
 from flask import Flask, session,request,render_template,redirect, url_for, Blueprint
 from banco import *
+
 from peewee import DoesNotExist
 carrinho = Blueprint('carrinho', __name__, static_folder='static')
+
+
 
 @carrinho.route("/", methods=['POST','GET'])
 def index():

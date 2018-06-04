@@ -1,26 +1,30 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<body class="animsition">
+    <body class="animsition">
 
-	<!-- content page -->
-	<section class="bgwhite p-t-66 p-b-38">
-		<div class="container">
-			<div class="row">
+    <!-- content page -->
+    <section class="bgwhite p-t-66 p-b-38">
+        <div class="container">
+            <div class="row">
 
-				<div class="col-xl-9 mx-auto">
+                <div class="col-xl-9 mx-auto">
                     <div class="cta-inner text-center rounded">
                         <h2 class="section-heading mb-5">
 
                             <h2 style="padding-bottom: 10px;">Login</h2>
-							<h5 style="padding-bottom: 50px;">Para comprar seu ingresso sem sair de casa!</h5>
-							
+                            <h5 style="padding-bottom: 50px;">Para comprar seu ingresso sem sair de casa!</h5>
+
 
                         </h2>
-                        <form class="form-horizontal" role="form" method="POST" action="/register">
+                        <form class="form-horizontal" role="form" method="POST" action="/login">
                             <div class="row">
                                 <div class="col-md-3"></div>
-
+ {% if msg %}
+                                    <div class="alert {{ msg[0] }}" role="alert">
+                                        {{ msg[1] }}
+                                    </div>
+                                {% endif %}
                             </div>
                             <div class="row">
 
@@ -42,7 +46,7 @@
                                             <div class="input-group-addon" style="width: 2.6rem">
                                                 <i class="fa fa-at"></i>
                                             </div>
-                                            <input type="text" name="email" class="form-control" id="email" placeholder="you@example.com" required autofocus>
+                                            <input type="text" name="usuario" class="form-control" id="email" placeholder="seu usuario" required autofocus>
                                         </div>
                                     </div>
                                 </div>
@@ -64,29 +68,31 @@
                                             <div class="input-group-addon" style="width: 2.6rem">
                                                 <i class="fa fa-key"></i>
                                             </div>
-                                            <input id="input" type="password" name="password" class="form-control" id="password" placeholder="Password" required>
+                                            <input id="input" type="password" name="senha" class="form-control" id="password" placeholder="Password" required>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
 
-								<div class="col-md-6 text-right">
-                                    <button type="button" class="btn btn-warning">
+                                <div class="col-md-6 text-right">
+                                    <a href="/usuario">
+                                    <button  type="button" class="btn btn-warning">
                                         <i class="fa fa-user-plus"></i>Cadastrar</button>
+                                    </a>
                                 </div>
-								
+
                                 <div class="col-md-6 text-left">
                                     <button type="submit" class="btn btn-success">
                                         <i class="fa fa-user-plus"></i>Login</button>
-								</div>
+                                </div>
 
                             </div>
                         </form>
                     </div>
                 </div>
-				
-			</div>
-		</div>
-	</section>
+
+            </div>
+        </div>
+    </section>
 {% endblock %}
