@@ -1,19 +1,19 @@
 from banco import Usuario, Sala, Genero, BandeiraCartao, TipoAudio,  Programacao, Uf, Cidade, Endereco, Cinema, \
-    Filme, DiaSemana, TipoTela, Sessao, Ingresso, Compra, Cliente, Funcionario, db, Banner
+    Filme, DiaSemana, TipoTela, Sessao, Ingresso, Compra, Cliente, Funcionario, db, Banner, TipoReclamacao, Reclamacoes
 
 db.connect()
 
 try:
     db.drop_tables(
         [Usuario, Cliente, BandeiraCartao, Funcionario, Sala, Genero, TipoAudio,  Programacao, Uf, Cidade,
-         Endereco, Cinema, Filme, DiaSemana, TipoTela, Sessao, Compra, Ingresso, Banner])
+         Endereco, Cinema, Filme, DiaSemana, TipoTela, Sessao, Compra, Ingresso, TipoReclamacao, Reclamacoes, Banner])
 
 except:
     print("Nao foi possivel Deleta tabelas")
 try:
     db.create_tables(
         [Usuario, BandeiraCartao, Cliente, Funcionario, Sala, Genero, TipoAudio,  Programacao, Uf, Cidade,
-         Endereco, Cinema, Filme, DiaSemana, TipoTela, Sessao, Compra, Ingresso, Banner])
+         Endereco, Cinema, Filme, DiaSemana, TipoTela, Sessao, Compra, Ingresso, TipoReclamacao, Banner, Reclamacoes])
 except:
     print("Nao foi possivel Criar tabelas")
 
@@ -77,16 +77,17 @@ genero4 = Genero(genero="Terror")
 genero1.save(), genero2.save(), genero3.save(), genero4.save()
 
 tipoAudio1 = TipoAudio(tipoAudio="Dublado")
-tipoAudio2 = TipoAudio(tipoAudio="Original")
+tipoAudio2 = TipoAudio(tipoAudio="Legendado")
 tipoAudio1.save(), tipoAudio2.save()
 
-sala1 = Sala(numero=1, capacidade=40, cinema=cine1).save()
-sala2 = Sala(numero=2, capacidade=40, cinema=cine1).save()
-sala3 = Sala(numero=3, capacidade=40, cinema=cine1).save()
-sala4 = Sala(numero=4, capacidade=40, cinema=cine1).save()
-sala5 = Sala(numero=1, capacidade=40, cinema=cine2).save()
-sala6 = Sala(numero=2, capacidade=10, cinema=cine2).save()
-
+sala1 = Sala(numero=1, capacidade=40, cinema=cine1)
+sala2 = Sala(numero=2, capacidade=40, cinema=cine1)
+sala3 = Sala(numero=3, capacidade=40, cinema=cine1)
+sala4 = Sala(numero=4, capacidade=40, cinema=cine1)
+sala5 = Sala(numero=1, capacidade=40, cinema=cine2)
+sala6 = Sala(numero=2, capacidade=40, cinema=cine2)
+sala7 = Sala(numero=3, capacidade=40, cinema=cine2)
+sala1.save(), sala2.save(), sala3.save(), sala4.save(), sala5.save(), sala6.save(), sala7.save()
 
 filme1 = Filme(nome="Vingadores Gerra Infinita",
                site="www.google.com.br",
@@ -144,28 +145,45 @@ tipoTela2 = TipoTela(tipoTela="I-Max")
 tipoTela3 = TipoTela(tipoTela="2D")
 tipoTela1.save(), tipoTela2.save(), tipoTela3.save()
 
-DiaSemana(nome="Segunda",numero="2", preco=14, cinema=cine1).save()
-DiaSemana(nome="Terca", numero="3", preco=14, cinema=cine1).save()
-DiaSemana(nome="Quarta", numero="4", preco=16, cinema=cine1).save()
-DiaSemana(nome="Quinta", numero="5", preco=20, cinema=cine1).save()
-DiaSemana(nome="Sexta", numero="6", preco=20, cinema=cine1).save()
-DiaSemana(nome="Sabado", numero="7", preco=20, cinema=cine1).save()
-DiaSemana(nome="Domingo", numero="1", preco=20, cinema=cine1).save()
-DiaSemana(nome="Feriado", numero="8", preco=20, cinema=cine1).save()
-DiaSemana(nome="Segunda", numero="2", preco=12, cinema=cine2).save()
-DiaSemana(nome="Terca", numero="3", preco=12, cinema=cine2).save()
-DiaSemana(nome="Quarta", numero="4", preco=14, cinema=cine2).save()
-DiaSemana(nome="Quinta", numero="5", preco=18, cinema=cine2).save()
-DiaSemana(nome="Sexta", numero="6", preco=18, cinema=cine2).save()
-DiaSemana(nome="Sabado", numero="7", preco=18, cinema=cine2).save()
-DiaSemana(nome="Domingo", numero="1", preco=18, cinema=cine2).save()
-DiaSemana(nome="Feriado", numero="8", preco=18, cinema=cine2).save()
+DiaSemana(nome="Segunda", numero="1", preco=14, cinema=cine1).save()
+DiaSemana(nome="Terca", numero="2", preco=14, cinema=cine1).save()
+DiaSemana(nome="Quarta", numero="3", preco=16, cinema=cine1).save()
+DiaSemana(nome="Quinta", numero="4", preco=20, cinema=cine1).save()
+DiaSemana(nome="Sexta", numero="5", preco=20, cinema=cine1).save()
+DiaSemana(nome="Sabado", numero="6", preco=20, cinema=cine1).save()
+DiaSemana(nome="Domingo", numero="0", preco=20, cinema=cine1).save()
+DiaSemana(nome="Feriado", numero="7", preco=20, cinema=cine1).save()
+DiaSemana(nome="Segunda", numero="1", preco=12, cinema=cine2).save()
+DiaSemana(nome="Terca", numero="2", preco=12, cinema=cine2).save()
+DiaSemana(nome="Quarta", numero="3", preco=14, cinema=cine2).save()
+DiaSemana(nome="Quinta", numero="4", preco=18, cinema=cine2).save()
+DiaSemana(nome="Sexta", numero="5", preco=18, cinema=cine2).save()
+DiaSemana(nome="Sabado", numero="6", preco=18, cinema=cine2).save()
+DiaSemana(nome="Domingo", numero="0", preco=18, cinema=cine2).save()
+DiaSemana(nome="Feriado", numero="7", preco=18, cinema=cine2).save()
 
+
+for i in range(10):
+    s1 = Sessao(filme=filme1, dataHora=str(i+3)+"/06/2018 8:00", tipoAudio=tipoAudio1, tipoTela=tipoTela1, sala=sala1)
+    s2 = Sessao(filme=filme1, dataHora=str(i+3)+"/06/2018 10:00", tipoAudio=tipoAudio2, tipoTela=tipoTela1, sala=sala1)
+    s3 = Sessao(filme=filme2, dataHora=str(i+3)+"/06/2018 16:00", tipoAudio=tipoAudio1, tipoTela=tipoTela3, sala=sala2)
+    s4 = Sessao(filme=filme2, dataHora=str(i+3)+"/06/2018 20:00", tipoAudio=tipoAudio2, tipoTela=tipoTela3, sala=sala2)
+    s5 = Sessao(filme=filme1, dataHora=str(i+3)+"/06/2018 8:00", tipoAudio=tipoAudio1, tipoTela=tipoTela1, sala=sala5)
+    s6 = Sessao(filme=filme1, dataHora=str(i+3)+"/06/2018 10:00", tipoAudio=tipoAudio2, tipoTela=tipoTela1, sala=sala5)
+    s7 = Sessao(filme=filme2, dataHora=str(i+3)+"/06/2018 16:00", tipoAudio=tipoAudio1, tipoTela=tipoTela3, sala=sala6)
+    s8 = Sessao(filme=filme2, dataHora=str(i+3)+"/06/2018 20:00", tipoAudio=tipoAudio2, tipoTela=tipoTela3, sala=sala6)
+    s1.save(), s2.save(), s3.save(), s4.save(), s5.save(), s6.save(), s7.save(), s8.save(),
+    db.commit()
+
+TipoReclamacao(tipo="Solicitacao de novos produtos").save()
+TipoReclamacao(tipo="Reclamacao").save()
+TipoReclamacao(tipo="Problema com entrega").save()
+TipoReclamacao(tipo="Problema com pagamento").save()
+TipoReclamacao(tipo="Outro assunto").save()
 
 b1 = Banner(nome="Gerra Infinita",descricao="Estreia 26/04",banner="static/images/slider-1.jpg", status="ativo")
 b2 = Banner(nome="STAR WARS VIII - THE LAST JEDI", descricao="Reveja outra vez", banner="static/images/slider-2.jpg", status="ativo")
 b1.save(), b2.save()
-sessao1 = Sessao(dataHora="21/05/2018 08:00", tipoAudio=tipoAudio1, tipoTela=tipoTela1, cinema=cine1, sala=sala1)
-sessao1.save()
+
 
 

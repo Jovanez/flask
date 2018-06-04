@@ -1,13 +1,15 @@
 {% if sessoes %}
-    {% for dia in sessoes %}
+    {% for s in sessoes %}
     <tr>
-        <td>{{ dia.nome }}</td>
-        <td>R$ {{ "{0:.2f}".format(dia.preco) }}</td>
-          <td>R$ {{ "{0:.2f}".format(dia.preco/2) }}</td>
+        <td>{{ s.dataHora.strftime('%d/%m/%Y') }}</td>
+        <td>{{ s.dataHora.strftime('%H:%M') }}</td>
+        <td>{{ s.tipoAudio.tipoAudio }} </td>
+        <td>{{ s.tipoTela.tipoTela }}</td>
+        <td>{{ s.sala.numero }}</td>
         <td>
             <div class="radio">
                 <label>
-                    <input value="{{ dia.codigo }}" type="radio" name="optradio">
+                    <input value="{{ s.codigo }}" class="radio" type="radio" name="sessao">
                 </label>
             </div>
         </td>

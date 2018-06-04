@@ -3,14 +3,18 @@
     <tr>
         <td>{{ dia.nome }}</td>
         <td>R$ {{ "{0:.2f}".format(dia.preco) }}</td>
-          <td>R$ {{ "{0:.2f}".format(dia.preco/2) }}</td>
+        <td>R$ {{ "{0:.2f}".format(dia.preco/2) }}</td>
         <td>
+            {% if dia.numero < 7 %}
             <div class="radio">
                 <label>
-                    <input value="{{ dia.codigo }}" type="radio" name="optradio" id="radio{{ loop.index }}">
+                    <input value="" type="radio" class="radio" name="dia" onchange="vai2({{ dia.numero}})" id="radioDia{{ loop.index }}">
                 </label>
             </div>
+            {% endif %}
         </td>
     </tr>
     {% endfor %}
+    {% else %}
+    <b>Nenhuma programação deste filme</b>
 {% endif %}

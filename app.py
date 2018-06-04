@@ -1,10 +1,10 @@
 # -*- coding: UTF-8 -*-
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect, session
 from filme import filme
 from peewee import DoesNotExist
 import datetime
-from banco import Banner,Filme,Usuario, Programacao
+from banco import Banner,Filme,Usuario, Programacao, TipoReclamacao, Reclamacoes
 from carrinho import carrinho
 
 app = Flask(__name__, static_url_path='/static')
@@ -22,14 +22,33 @@ def index():
    except DoesNotExist:
       pass
 
-   return render_template("index.html", listaBanner=listaBanner,filmeCartaz=listaFilme)
+   return render_template("index.html", listaBanner=listaBanner, filmeCartaz=listaFilme)
 
-@app.route("/contato")
+@app.route("/contato", methods=['POST','GET'])
 def contato():
-   return render_template("contact.html")
+    msg = []
+    session['url'] = '/contato'
+    if request.method == 'POST':
+        try:
+            email = request.form['email']
+            telefone = request.form['telefone']
+            nome = request.form['nome']
+            mensagem = request.form['mensagem']
+            tipoReclamacao = request.form['tipoReclamacao']
+            Reclamacoes(nome=nome, telefone=telefone, texto=mensagem, email=email, tipo=tipoReclamacao, status='ativo').save()
+            msg = ['alert-success', 'Sua msg foi enviada']
+        except :
+            msg = ['alert-danger', 'Sua msg nao foi enviada']
+
+        return render_template("contact.html", tipoReclamacao=tipoReclamacao, msg=msg)
+    else:
+        tipoReclamacao = TipoReclamacao.select()
+        return render_template("contact.html", tipoReclamacao=tipoReclamacao)
+
 
 @app.route("/sobre")
 def sobre():
+   session['url'] = '/sobre'
    return render_template("about.html")
 
 

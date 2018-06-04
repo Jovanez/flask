@@ -107,10 +107,10 @@ class TipoTela(BaseModel):
 
 class Sessao(BaseModel):
     codigo = PrimaryKeyField()
-    dataHora = DateField()
+    dataHora = DateTimeField()
     tipoAudio = ForeignKeyField(TipoAudio)
     tipoTela = ForeignKeyField(TipoTela)
-    cinema = ForeignKeyField(Cinema, backref='Sessoes')
+    filme = ForeignKeyField(Filme, backref='Sessoes')
     sala = ForeignKeyField(Sala, backref='Sessoes')
 
 class Compra(BaseModel):
@@ -135,10 +135,15 @@ class Gostei(BaseModel):
     usuario = CharField()
     filme = ForeignKeyField(Filme)
 
+class TipoReclamacao(BaseModel):
+    codigo = PrimaryKeyField()
+    tipo = CharField()
+
 class Reclamacoes(BaseModel):
     codigo = PrimaryKeyField()
     nome = CharField()
     email = CharField()
+    tipo = ForeignKeyField(TipoReclamacao)
     telefone = CharField()
     texto = CharField()
     status = CharField(max_length=10)
